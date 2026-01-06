@@ -15,24 +15,17 @@
       --border: #e5e7eb;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: system-ui, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.7;
     }
 
     header {
-      background: #ffffff;
+      background: #fff;
       border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 10;
     }
 
     .nav {
@@ -44,16 +37,9 @@
       align-items: center;
     }
 
-    .logo {
-      font-weight: 700;
-      font-size: 18px;
-      color: var(--primary);
-    }
-
     nav a {
       margin-left: 20px;
       text-decoration: none;
-      font-weight: 500;
       color: var(--text);
     }
 
@@ -63,20 +49,20 @@
 
     main {
       max-width: 900px;
-      margin: 48px auto;
+      margin: 60px auto;
       padding: 0 20px;
     }
 
     .card {
       background: var(--card);
-      border-radius: 12px;
       padding: 40px;
+      border-radius: 14px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.06);
     }
 
     h1 {
       font-size: 32px;
-      margin-bottom: 12px;
+      margin-bottom: 20px;
     }
 
     h2 {
@@ -85,28 +71,20 @@
       color: var(--primary);
     }
 
-    h3 {
-      margin-top: 24px;
-      font-size: 18px;
-    }
-
-    p {
-      color: var(--text);
-    }
-
     ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 8px;
+      padding-left: 22px;
     }
 
     footer {
       text-align: center;
-      color: var(--muted);
       font-size: 14px;
-      padding: 32px 0;
+      color: var(--muted);
+      padding: 32px;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      font-family: inherit;
     }
   </style>
 </head>
@@ -114,7 +92,7 @@
 
 <header>
   <div class="nav">
-    <div class="logo">IviApp</div>
+    <strong>IviApp</strong>
     <nav>
       <a href="/terminos-y-condiciones">Términos</a>
       <a href="/eliminar-cuenta">Eliminar mi cuenta</a>
@@ -124,65 +102,135 @@
 
 <main>
   <div class="card">
-    <h1>Términos y Condiciones</h1>
+    <h1>Términos y Condiciones / Política de Privacidad</h1>
 
     <h2>1. Introducción</h2>
-    <p>
-      IviApp ("nosotros", "nuestra", "la aplicación") se compromete a proteger su privacidad.
-      Esta política explica cómo recopilamos, utilizamos y protegemos su información.
-    </p>
+    <pre>IviApp ("nosotros", "nuestra", "la aplicación") se compromete a proteger su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos su información cuando utiliza nuestra aplicación móvil de diario personal.
+
+Al utilizar IviApp, usted acepta las prácticas de privacidad descritas en esta política. Si no está de acuerdo con alguna parte de esta política, no utilice nuestra aplicación.</pre>
 
     <h2>2. Información que Recopilamos</h2>
+    <pre>Recopilamos diferentes tipos de información para proporcionar y mejorar nuestros servicios:
 
-    <h3>Información Personal</h3>
-    <ul>
-      <li>Nombre y correo electrónico</li>
-      <li>Información de perfil</li>
-      <li>Credenciales de acceso cifradas</li>
-    </ul>
+2.1 Información Personal:
+- Nombre y dirección de correo electrónico
+- Información de perfil (foto de perfil, preferencias)
+- Datos de autenticación (contraseñas hasheadas)
 
-    <h3>Contenido del Diario</h3>
-    <ul>
-      <li>Textos, imágenes, audios y videos</li>
-      <li>Fechas, ubicaciones y etiquetas</li>
-    </ul>
+2.2 Contenido del Diario:
+- Textos, notas y entradas de diario
+- Imágenes y fotografías
+- Grabaciones de audio
+- Videos
+- Ubicaciones (opcional)
+- Fechas y horarios de eventos
+- Categorías y etiquetas personalizadas
 
-    <h3>Información Técnica</h3>
-    <ul>
-      <li>Dirección IP</li>
-      <li>Datos del dispositivo</li>
-      <li>Logs de uso</li>
-    </ul>
+2.3 Información Técnica:
+- Dirección IP y datos de conexión
+- Identificadores únicos del dispositivo
+- Datos de uso de la aplicación
+- Logs de errores y rendimiento
 
-    <h2>3. Uso de la Información</h2>
-    <ul>
-      <li>Proveer el servicio</li>
-      <li>Mejorar la aplicación</li>
-      <li>Soporte y seguridad</li>
-    </ul>
+2.4 Información de Colaboración:
+- Diarios compartidos y bitácoras colaborativas
+- Códigos de invitación
+- Roles y permisos en diarios compartidos
+- Actividad en diarios colaborativos</pre>
 
-    <h2>4. Derechos del Usuario</h2>
-    <ul>
-      <li>Acceso y rectificación</li>
-      <li>Eliminación de datos</li>
-      <li>Portabilidad</li>
-    </ul>
+    <h2>3. Cómo Utilizamos su Información</h2>
+    <pre>Utilizamos la información recopilada para los siguientes propósitos:
 
-    <p>
-      Puede ejercer sus derechos escribiendo a
-      <strong>administracion@hemel-lab.cl</strong>.
-    </p>
+3.1 Prestación de Servicios:
+- Crear, almacenar y sincronizar sus entradas de diario
+- Proporcionar funcionalidades de multimedia (fotos, audio, video)
+- Gestionar diarios compartidos y colaborativos
+- Procesar temporizadores y recordatorios
+- Exportar y respaldar sus datos
 
-    <h2>5. Contacto</h2>
-    <p>
-      Email privacidad: administracion@hemel-lab.cl<br />
-      Soporte: administracion@hemel-lab.cl
-    </p>
+3.2 Comunicación:
+- Enviar notificaciones sobre recordatorios y eventos
+- Comunicar actualizaciones de la aplicación
+- Responder a consultas de soporte técnico
+- Enviar notificaciones de seguridad importantes
+
+3.3 Mejora del Servicio:
+- Analizar patrones de uso para mejorar la funcionalidad
+- Desarrollar nuevas características
+- Optimizar el rendimiento de la aplicación
+- Personalizar la experiencia del usuario
+
+3.4 Seguridad:
+- Detectar y prevenir fraudes
+- Proteger contra accesos no autorizados
+- Mantener la integridad de los datos
+- Cumplir con obligaciones legales</pre>
+
+    <h2>4. Compartir Información</h2>
+    <pre>No vendemos, alquilamos ni compartimos su información personal con terceros, excepto en las siguientes circunstancias:
+
+4.1 Con su Consentimiento:
+- Cuando usted elige compartir contenido en diarios colaborativos
+- Al invitar a otros usuarios a sus bitácoras
+- Cuando exporta o comparte sus datos
+
+4.2 Proveedores de Servicios:
+- Servicios de almacenamiento en la nube (para respaldos)
+- Proveedores de infraestructura técnica
+- Servicios de notificaciones push
+
+4.3 Requisitos Legales:
+- Cuando sea requerido por ley o proceso legal
+- Para proteger nuestros derechos legales
+- En caso de emergencia para proteger la seguridad
+- Para cumplir con órdenes judiciales o gubernamentales</pre>
+
+    <h2>5. Almacenamiento y Seguridad</h2>
+    <pre>5.1 Almacenamiento:
+- Sus datos se almacenan en servidores seguros con encriptación
+- Utilizamos medidas de seguridad físicas y técnicas
+- Los datos se respaldan regularmente
+- Implementamos controles de acceso estrictos
+
+5.2 Seguridad:
+- Encriptación de datos en tránsito y en reposo
+- Autenticación de dos factores disponible
+- Monitoreo continuo de seguridad
+- Actualizaciones regulares de seguridad
+
+5.3 Retención de Datos:
+- Conservamos sus datos mientras mantenga una cuenta activa
+- Puede solicitar la eliminación de su cuenta en cualquier momento
+- Algunos datos pueden conservarse por períodos legales requeridos
+- Los respaldos se eliminan según políticas de retención</pre>
+
+    <h2>6. Sus Derechos</h2>
+    <pre>Como usuario de IviApp, usted tiene los siguientes derechos:
+
+- Acceso, rectificación, eliminación, portabilidad y restricción.
+
+Para ejercer estos derechos, contacte con nosotros en administracion@hemel-lab.cl</pre>
+
+    <h2>7. Cookies y Tecnologías de Seguimiento</h2>
+    <pre>No utilizamos cookies de seguimiento ni analytics de terceros.</pre>
+
+    <h2>8. Privacidad de Menores</h2>
+    <pre>La aplicación puede ser utilizada por personas de cualquier edad. No compartimos información con terceros.</pre>
+
+    <h2>9. Transferencias Internacionales</h2>
+    <pre>Cumplimos con GDPR y estándares internacionales de protección de datos.</pre>
+
+    <h2>10. Actualizaciones</h2>
+    <pre>Podemos actualizar esta política ocasionalmente.</pre>
+
+    <h2>11. Información de Contacto</h2>
+    <pre>Email: administracion@hemel-lab.cl</pre>
+
   </div>
 </main>
 
 <footer>
-  © 2026 IviApp — Todos los derechos reservados
+  © 2026 IviApp
 </footer>
 
 </body>
